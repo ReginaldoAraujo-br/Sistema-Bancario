@@ -24,7 +24,7 @@ def menu_bancario():
                 valor = float(input("Digite o valor do saque: "))
                 if valor <= saldo_atual:
                     saldo_atual -= valor
-                    extrato.append(f"\nSaque: -{valor:.2f}")
+                    extrato.append(f"\nSaque: R$ -{valor:.2f}")
                     contador_de_saque += 1
                     print(f"\nSaque de R$ {valor:.2f} realizado com sucesso.")
                     print(f"Seu novo saldo é de R$ {saldo_atual:.2f}")
